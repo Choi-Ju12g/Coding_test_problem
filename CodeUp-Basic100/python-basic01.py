@@ -199,43 +199,250 @@
 # print(a+b+c,format((a+b+c)/3,".2f"))
 
 # basic 46
-print(int(input())<<1)
+# print(int(input())<<1)
 
 # basic 47
-a,b = map(int, input().split())
-print(a<<b)
+# a,b = map(int, input().split())
+# print(a<<b)
 
 # basic 48
-a,b = map(int, input().split())
-if a<b:
-    print(True)
-else:
-    print(False)
-# print(123<456) 이면 True 출력
-
-# basic 49
-a,b = map(int, input().split())
-# if a== b:
+# a,b = map(int, input().split())
+# if a<b:
 #     print(True)
 # else:
 #     print(False)
-print(a==b)
+# print(123<456) 이면 True 출력
+
+# basic 49
+# a,b = map(int, input().split())
+# # if a== b:
+# #     print(True)
+# # else:
+# #     print(False)
+# print(a==b)
 
 # basic 50
-a, b = map(int, input().split())
-print(b>=a)
+# a, b = map(int, input().split())
+# print(b>=a)
 
 # basic 51
-
+# a, b = map(int, input().split())
+# print(a!=b)
 
 # basic 52
+# a = int(input())
+# print(bool(a))
 
 # basic 53
+# a = int(input())
+# print(not bool(a))
 
 # basic 54
+# a, b = map(int, input().split())
+# print(bool(a&b))
 
 # basic 55
+# a, b = map(int, input().split())
+# print(bool(a or b))
 
 # basic 56
+# a, b = map(int, input().split())
+# print(bool(a) or bool(b))
 
 # basic 57
+# a, b = map(int, input().split())
+# print(not(bool(a)^bool(b)))
+
+# basic 58
+# a, b = map(int, input().split())
+# print(not(bool(a)|bool(b)))
+
+# basic 59
+# a = int(input())
+# print(~a)
+
+# basic 60
+# a, b = map(int, input().split())
+# print(a&b)
+
+# basic 61
+# a, b = map(int, input().split())
+# print(a|b)
+
+# basic 62
+# a, b = map(int, input().split())
+# print(a^b)
+
+# basic 63
+# a, b = map(int, input().split())
+# print(a if(a>=b) else b)
+# 3항연산자 참일때 값 if(조건)else 거짓일때 값
+
+# basic 64
+# a, b, c = map(int, input().split())
+# print((a if (a<b) else b) if((a if (a<b) else b) <c) else c)
+#
+# # basic 65
+# a, b, c = map(int, input().split())
+# if a%2==0:
+#     print(a)
+# if b%2==0:
+#     print(b)
+# if c%2==0:
+#     print(c)
+
+# basic 66
+# a, b, c = map(int, input().split())
+# if a%2==0:
+#     print("even")
+# else:
+#     print("odd")
+# if b%2==0:
+#     print("even")
+# else:
+#     print("odd")
+# if c%2==0:
+#     print("even")
+# else:
+#     print("odd")
+
+# basic 67
+# a = int(input())
+# if a > 0:
+#     if a%2==0:
+#         print("C")
+#     else:
+#         print("D")
+# else:
+#     if a%2==0:
+#         print("A")
+#     else:
+#         print("B")
+
+
+# basic 68
+# a = int(input())
+# if a>= 90:
+#     print("A")
+# elif a>=70:
+#     print("B")
+# elif a>= 40:
+#     print("C")
+# else:
+#     print("D")
+
+# basic 69
+a = input()
+if a == "A":
+    print("best!!!")
+elif a == "B":
+    print("good!!")
+elif a == "C":
+    print("run!")
+elif a == "D":
+    print("slowly~")
+else : print("what?")
+
+# basic 70
+a = int(input())
+if a//3 == 1:
+    print("spring")
+elif a//3 == 2:
+    print("summer")
+elif a//3 ==3:
+    print("fall")
+else:
+    print("winter")
+
+# basic 71
+n = 1
+while n != 0:
+    n = int(input())
+    if n ==0:
+        break
+    print(n)
+
+# basic 72
+n = int(input())
+# for i in range(n):
+#     print(n-i)
+while n!=0:
+    print(n)
+    n-=1
+
+# basic 73
+n = int(input())
+# for i in range(n):
+#     print(n-i)
+while n!=0:
+    print(n-1)
+    n-=1
+
+# basic 74
+a = ord(input())
+b =ord('a')
+n = a-b
+for i in range(n+1):
+    print(chr(b+i),end=' ')
+
+# basic 75
+a = int(input())
+for i in range(a+1):
+    print(i)
+
+# basic 76
+a = int(input())
+n = a
+while n>=0:
+    print(a-n)
+    n-=1
+
+# basic 77
+
+# basic 78
+
+# basic 79
+
+# basic 80
+
+# basic 81
+
+# basic 82
+
+# basic 83
+
+# basic 84
+
+# basic 85
+
+# basic 86
+
+# basic 87
+
+# basic 88
+
+# basic 89
+
+# basic 90
+
+# basic 91
+
+# basic 92
+
+# basic 93
+
+# basic 94
+
+# basic 95
+
+# basic 96
+
+# basic 97
+
+# basic 98
+
+# basic 99
+
+# basic 100
+
+
