@@ -396,7 +396,7 @@ n = a
 while n>=0:
     print(a-n)
     n-=1
-# real basic is over
+
 
 # basic 77
 
