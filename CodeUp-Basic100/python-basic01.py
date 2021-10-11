@@ -397,53 +397,191 @@ while n>=0:
     print(a-n)
     n-=1
 
-
 # basic 77
+a = int(input())
+s = 0
+for i in range(a+1):
+    if i%2==0:
+        s += i
+print(s)
 
 # basic 78
+while True:
+    x = input()
+    print(x)
+    if x == 'q':
+        break
 
 # basic 79
+a = int(input())
+s = 0
+i = 0
+while True:
+    i +=1
+    s += i
+    if(s>=a):
+        print(i)
+        break
+print(s)
 
 # basic 80
+n, m = map(int,input().split())
+for i in range(1, n+1):
+    for j in range(1, m+1):
+        print(i, j)
 
 # basic 81
+a = int(input(),16)
+for i in range(1,16):
+    print('%X'%a,'*%X'%i,'=%X'%(a*i),sep='')
 
 # basic 82
+a = int(input())
+for i in range(1,a+1):
+    print('X' if ((i%10==3) | (i%10==6) | (i%10==9)) else i,end=' ')
 
 # basic 83
-
+r,g,b = map(int, input().split())
+cnt = 0
+for i in range(r):
+    for j  in range(g):
+        for k in range(b):
+            print(i,j,k)
+            cnt += 1
+print(cnt)
 # basic 84
+h,b,c,s = map(int, input().split())
+print(format(h*b*c*s/8/1024/1024,".1f")+" "+"MB")
 
 # basic 85
+w,h,b = map(int, input().split())
+print(format(w*h*b/8/1024/1024,".2f")+" "+"MB")
 
 # basic 86
-
+n = int(input())
+i = 0
+s = 0
+while True:
+    i +=1
+    s +=i
+    if s>=n:
+        print(s)
+        break
 # basic 87
+n = int(input())
+for i in range(1, n+1):
+    if i%3 ==0:
+        continue
+    print(i,end=" ")
 
 # basic 88
+a,d,n = map(int,input().split())
+print(a+(n-1)*d)
 
 # basic 89
+a,r,n = map(int, input().split())
+print(a*(r**(n-1)))
 
 # basic 90
+a,m,d,n = map(int, input().split())
+for i in range(n-1):
+    a = (a*m)+d
+print(a)
 
 # basic 91
+a,b,c = map(int,input().split())
+d =1
+while d%a!=0 or d%b!=0or d%c!=0 :
+    d+=1
+print(d)
 
 # basic 92
+n = int(input())
+l = list(map(int,input().split()))
+answer = [0]*23
+for i in l:
+    answer[i-1] += 1
+for i in range(23):
+    print(answer[i],end=" ")
 
 # basic 93
+n = int(input())
+l = list(map(int,input().split()))
+answer = [0]*n
+cnt = -1
+for i in l:
+    answer[cnt] = i
+    cnt-=1
+for i in range(n):
+    print(answer[i],end=" ")
 
 # basic 94
+n = int(input())
+l = list(map(int,input().split()))
+l.sort()
+print(l[0])
 
 # basic 95
+n = int(input())
+list = [[0]*20 for i in range(20)]
+for i in range(n):
+    a,b = map(int,input().split())
+    list[a][b] = 1
+for i in range(1,20):
+    for j in range(1,20):
+        print(list[i][j],end=" ")
+    print()
+# map으로 리스트 이름을 하면 함수에서겹쳐서 오류남
 
 # basic 96
+l = [[0] * 20 for i in range(20)]
+
+for i in range(1, 20):
+    a = list(map(int, input().split()))
+
+    for j in range(19):
+        l[i][j + 1] = a[j]
+
+n = int(input())
+for i in range(n):
+    a, b = map(int, input().split())
+
+    for j in range(1, 20):
+        if l[j][b] == 0:
+            l[j][b] = 1
+        else:
+            l[j][b] = 0
+
+        if l[a][j] == 0:
+            l[a][j] = 1
+        else:
+            l[a][j] = 0
+
+for i in range(1, 20):
+    for j in range(1, 20):
+        print(l[i][j], end=" ")
+    print()
 
 # basic 97
+h, w = map(int, input().split())
+n = int(input())
+
+location = [[0] * w for i in range(h)]  # w*h의 리스트
+
+for i in range(n):
+    l, d, x, y = map(int, input().split())
+    for j in range(l):
+        if d == 1:  # 세로로 놓기
+            location[x + j - 1][y - 1] = 1
+        else:  # 가로로 놓기
+            location[x - 1][y + j - 1] = 1
+
+for i in range(h):
+    for j in range(w):
+        print(location[i][j], end=" ")
+    print()
+
 
 # basic 98
-
-# basic 99
-
-# basic 100
 
 
