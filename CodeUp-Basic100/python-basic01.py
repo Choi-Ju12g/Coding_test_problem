@@ -583,5 +583,36 @@ for i in range(h):
 
 
 # basic 98
+l = [[0] * 10 for i in range(10)]  # 10x10 배열
+x, y = 1, 1  # 개미의 시작위치
+
+for i in range(10):
+    tmp = list(map(int, input().split()))
+    for j in range(10):
+        l[i][j] = tmp[j]
+
+l[x][y] = 9
+
+while True:
+    if l[x][y + 1] == 0:  # 오른쪽으로 이동할 수 있을경우
+        y += 1
+        l[x][y] = 9
+    elif l[x + 1][y] == 0:  # 오른쪽 이동X, 아래 이동 O
+        x += 1
+        l[x][y] = 9
+    elif l[x][y + 1] == 2:
+        y += 1
+        l[x][y] = 9
+        break
+    elif l[x + 1][y] == 2:
+        x += 1
+        l[x][y] = 9
+        break
+    else:  # 오른쪽, 아래 이동 X
+        break
 
 
+for i in range(10):
+    for j in range(10):
+        print(l[i][j], end=" ")
+    print()
