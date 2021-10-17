@@ -15,7 +15,7 @@ def solution(name):
     else:
         next = charset.index(0) +1
         while next < len(name) and charset[next] == 0:
-            next += 1 
+            next += 1
         answer += min(len(name)-1, (2*charset.index(0)+len(name)-next))
     return answer
 
