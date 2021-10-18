@@ -1,6 +1,25 @@
 from itertools import combinations
 
-def solution(number, k):
+def solution(number,k):
+    answer = []
+    list = ''
+    answer_len = len(str(number))-k
+    for i in str(number):
+        # 조건
+        while answer and answer[-1] < i and k >0:
+            answer.pop()
+            k -= 1
+
+        answer.append(i)
+    for i in range(answer_len):
+         list += answer[i]
+    print(list)
+    return list
+
+solution(99994,3)
+
+
+def solution_comb(number, k):
     answer = ''
     list_comb = list(combinations(list(str(number)),len(str(number))-k))
     #print(list_comb)
@@ -27,4 +46,3 @@ def solution_def(number,k):
 
     return answer
 
-solution(1924,2)
