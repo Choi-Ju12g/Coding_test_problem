@@ -1,15 +1,18 @@
+from collections import deque
+
+# deque's pop(), popleft() is better than list's pop function in perspective of running time
 def solution(people, limit):
     answer = 0
     people.sort()
-    j = 0
-    while len(people) >= 2:
-        if  people[0]+ people[-1] <= limit:
-            people.pop()
-            people.pop(0)
+    q = deque(people)
+    while len(q) >= 2:
+        if  q[0]+ q[-1] <= limit:
+            q.pop()
+            q.popleft()
             answer+=1
         else:
-            people.pop()
+            q.pop()
             answer+=1
-    if len(people) == 1:
+    if len(q) == 1:
         answer +=1
     return answer
