@@ -34,6 +34,7 @@ def bfs(place,x,y):
         if pos[2] > 2:
             break
     return True
+#using bfs, 안되는것만 체크
 
 def solution(places):
     answer = []
