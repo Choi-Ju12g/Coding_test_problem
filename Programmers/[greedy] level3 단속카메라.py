@@ -10,3 +10,8 @@ def solution(routes):
 
 
     return answer
+
+def solution2(routes):
+    answer = 0
+    routes.sort(key= lambda x : x[1])
+    visited = [0] * len(routes)
