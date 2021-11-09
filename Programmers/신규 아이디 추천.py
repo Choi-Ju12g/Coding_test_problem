@@ -27,7 +27,7 @@ def solution(new_id):
     if len(answer) >= 16:
         answer = answer[0:15]
         if answer[-1] == '.':
-            answer = answer[0:len(answer)-2]
+            answer = answer[0:-1]
 
     # step 7
     while len(answer) <= 2:
