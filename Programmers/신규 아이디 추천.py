@@ -15,7 +15,10 @@ def solution(new_id):
 
     # step 4
     if answer[0] == '.':
-        answer = answer[1:]
+        if len(answer) < 2:
+            answer = '.'
+        else:
+            answer = answer[1:]
     if answer[-1] == '.':
         answer = answer[0:-1]
 
