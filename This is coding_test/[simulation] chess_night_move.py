@@ -31,3 +31,11 @@ for move in range(move_types2):
     cnt += 1
 
 print(cnt)
+
+# for moves in range(move_types):
+#     nx = x - move[0]
+#     ny = y - move[1]
+#
+#     if nx >= 1 and ny >= 1:
+#         continue
+#     cnt += 1

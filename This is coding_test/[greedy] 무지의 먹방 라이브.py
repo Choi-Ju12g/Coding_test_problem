@@ -1,6 +1,5 @@
 def solution(food_times, k):
     answer = 0
-    sum_count = 0
     pivot = 0
     if sum(food_times) <= k:
         return -1
