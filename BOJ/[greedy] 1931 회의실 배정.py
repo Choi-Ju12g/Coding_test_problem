@@ -11,7 +11,7 @@ time.sort(key=lambda x:x[1])
 count = 0
 last = 0
 for cur in time:
-    if cur[0] > last:
+    if cur[0] >= last:
         count += 1
         last = cur[1]
 
