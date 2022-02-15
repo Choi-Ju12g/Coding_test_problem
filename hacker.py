@@ -1,29 +1,28 @@
 from itertools import combinations_with_replacement as H
 from itertools import permutations as P
 
-# def getSubstringCount(s):
-#     continous_cnt = []
-#     count = 0
-#     result = 0
-#     pivot = s[0]
-#     for i in s:
-#         if i != pivot:
-#             continous_cnt.append(count)
-#             count = 1
-#             pivot = i
-#         else:
-#             count += 1
-#
-#     if count > 1:
-#         continous_cnt.append(count)
-#     else:
-#         continous_cnt.append(1)
-#
-#     print(continous_cnt)
-#     for i in range(len(continous_cnt) - 1):
-#         result += min(continous_cnt[i], continous_cnt[i + 1])
-#
-#     return result
+def getSubstringCount(s):
+    continous_cnt = []
+    count = 0
+    result = 0
+    pivot = s[0]
+    for i in s:
+        if i != pivot:
+            continous_cnt.append(count)
+            count = 1
+            pivot = i
+        else:
+            count += 1
+
+    if count > 1:
+        continous_cnt.append(count)
+    else:
+        continous_cnt.append(1)
+
+    for i in range(len(continous_cnt) - 1):
+        result += min(continous_cnt[i], continous_cnt[i + 1])
+
+    return result
 # s = '1100010'
 # print(getSubstringCount(s))
 
