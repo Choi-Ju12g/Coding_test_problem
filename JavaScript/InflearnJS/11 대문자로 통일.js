@@ -8,4 +8,9 @@ function solution(s){
     return ans;
 }
 
+function sol(s){
+    return s.split('').map(e => {return e.toUpperCase()}).join("");
+}
+
 console.log(solution("ItisTimeToStudy"));
+console.log(sol("ItisTimeToStudy"));
