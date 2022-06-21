@@ -6,3 +6,8 @@ console.log(solution(day, cars));
 function solution(day, cars){
     return cars.filter((car) => car % 10 === day).length;
 };
+
+
+function solution2(day, cars){
+    return cars.filter((e) => e % 10 === day).length;
+}

@@ -1,7 +1,7 @@
 
-const arr = [1,2,3,4,5,6,7,8];
+const arr = [5,3,7,11,4,16,72,18];
 
-console.log(findMinValue(arr));
+//console.log(findMinValue(arr));
 
 
 function findMinValue(arr){
@@ -24,3 +24,10 @@ function solution2(...arr){
 function solution3(...arr){
     return Math.min.apply(null, arr);
 }
+
+function solution4(arr){
+    arr.sort((a,b) => a-b);
+    return arr[0]
+}
+
+console.log(solution4(arr));
