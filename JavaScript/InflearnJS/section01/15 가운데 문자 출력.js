@@ -15,3 +15,5 @@ function solution(str){
 
 console.log(solution("study"));
 console.log(solution('good'));
+
+// substr 과 substring 차이 substr(시작인덱스 , 개수)  substring(시작인덱스, 최종인덱스)-> 당연히 포함 미포함
